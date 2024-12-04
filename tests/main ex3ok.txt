@@ -8,7 +8,6 @@ from .crews.poem_crew.poem_crew import PoemCrew
 class PoemState(BaseModel):
     sentence_count: int = 1
     poem: str = ""
-    analysis: str = ""  # Adicionando um campo para armazenar a análise
 
 
 class ExtendedPoemState(PoemState):
@@ -47,33 +46,18 @@ class PoemFlow(Flow[ExtendedPoemState]):
         self.state.poem = result.raw
 
     @listen(generate_poem)
-    def analyze_poem(self):
-        """Analisa a complexidade do poema com base no número de frases"""
-        print("Analyzing poem complexity")
-        if self.state.sentence_count <= 2:
-            self.state.analysis = "Simple Poem"
-        elif self.state.sentence_count <= 4:
-            self.state.analysis = "Moderately Complex Poem"
-        else:
-            self.state.analysis = "Highly Complex Poem"
-
-        print(f"Poem Analysis: {self.state.analysis}")
-
-    @listen(analyze_poem)
     def save_poem(self):
-        """Salva o poema e seus detalhes em arquivos"""
+        """Salva o poema em poem.txt e os detalhes em poem_details.txt"""
         print("Saving poem")
 
         # Salvar o poema no arquivo poem.txt
         with open("poem.txt", "w") as poem_file:
             poem_file.write(self.state.poem)
 
-        # Salvar os detalhes (número de frases, tema e análise) no arquivo poem_details.txt
+        # Salvar os detalhes (número de frases e tema) no arquivo poem_details.txt
         with open("poem_details.txt", "w") as details_file:
             details_file.write(f"Sentence Count: {self.state.sentence_count}\n")
             details_file.write(f"Theme: {self.state.theme}\n")
-            details_file.write(f"Analysis: {self.state.analysis}\n")
-
 
 def kickoff():
     """Inicia o fluxo de geração do poema"""
@@ -88,12 +72,4 @@ def plot():
 
 
 if __name__ == "__main__":
-    # Use kickoff() para executar o fluxo
-    # Use plot() para gerar o diagrama do fluxo
-    option = input("Type 'run' to kickoff or 'plot' to generate a flow diagram: ").strip().lower()
-    if option == "run":
-        kickoff()
-    elif option == "plot":
-        plot()
-    else:
-        print("Invalid option. Please type 'run' or 'plot'.")
+    kickoff()
