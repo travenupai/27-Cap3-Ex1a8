@@ -1,0 +1,10 @@
+write_haiku:
+  description: >
+    Write a haiku following the traditional structure of 5-7-5 syllables.
+    Focus on themes of nature, seasons, or emotions.
+  expected_output: >
+    A haiku with three lines:
+    - The first line has 5 syllables.
+    - The second line has 7 syllables.
+    - The third line has 5 syllables.
+  agent: haiku_writer
