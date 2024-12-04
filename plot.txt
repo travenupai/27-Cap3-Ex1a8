@@ -1,0 +1,48 @@
+Estrutura do Diagrama
+
+1. Generate Sentence Count (Bloco Vermelho)
+Descrição: Este é o método inicial do fluxo, decorado com @start().
+Função: Gera um número aleatório de frases para o poema (sentence_count), que será usado nas próximas etapas.
+Conexão: Aponta para o próximo nó, Set Theme, indicando que, após a contagem ser gerada, o tema será definido.
+
+2. Set Theme (Bloco Preto)
+Descrição: Este é o segundo método do fluxo, acionado após o Generate Sentence Count por meio do decorador @listen(generate_sentence_count).
+Função: Solicita ao usuário o tema do poema e o salva no estado (theme).
+Conexão: Aponta para o nó Generate Poem, indicando que, após definir o tema, o poema será gerado.
+
+3. Generate Poem (Bloco Vermelho com Borda)
+Descrição: Este método está relacionado ao CrewAI, configurado para acionar a equipe PoemCrew.
+Função: Utiliza o PoemCrew para gerar um poema com base no número de frases (sentence_count) e no tema (theme) definidos nas etapas anteriores.
+Conexão: Aponta para o nó Save Poem, indicando que, após o poema ser gerado, ele será salvo.
+
+4. Save Poem (Bloco Preto)
+Descrição: Este é o método final do fluxo.
+Função: Salva o poema gerado em poem.txt e os detalhes (número de frases e tema) em poem_details.txt.
+Conexão: É o último nó, sem saída adicional, indicando o final do fluxo.
+Conexões no Diagrama
+As setas no diagrama representam dependências entre os métodos:
+
+Generate Sentence Count -> Set Theme:
+
+Indica que o tema só pode ser definido após a contagem de frases ter sido gerada.
+Set Theme -> Generate Poem:
+
+Mostra que o poema será gerado apenas depois que o tema for definido.
+Generate Poem -> Save Poem:
+
+Indica que o poema gerado será salvo como a etapa final do fluxo.
+Significado dos Elementos no Rodapé
+Bloco Vermelho (Start Method):
+
+Representa o método inicial do fluxo (@start()).
+Bloco Preto (Method):
+
+Representa métodos padrão no fluxo (@listen()).
+Bloco Vermelho com Borda (Crew Method):
+
+Representa um método que interage com uma equipe configurada no CrewAI.
+Fluxo Lógico
+Etapa 1: Gera o número de frases para o poema.
+Etapa 2: Solicita ao usuário o tema do poema.
+Etapa 3: Gera o poema com base nas entradas anteriores.
+Etapa 4: Salva o poema e os detalhes.
