@@ -60,14 +60,22 @@ class PoemFlow(Flow[ExtendedPoemState]):
             raise
 
     def generate_sentence_count(self):
-        """Gera uma contagem aleatória de frases para o poema"""
+        """Permite ao usuário definir o número de frases ou gerar automaticamente"""
         try:
             logging.info("Starting: Generate Sentence Count")
-            self.state.sentence_count = randint(1, 5)
-            logging.info(f"Generated Sentence Count: {self.state.sentence_count}")
+            user_input = input("Enter the number of sentences for the poem (or press Enter for automatic generation): ").strip()
+        
+            if user_input.isdigit():
+                self.state.sentence_count = int(user_input)
+                logging.info(f"User-defined Sentence Count: {self.state.sentence_count}")
+            else:
+                self.state.sentence_count = randint(1, 5)
+                logging.info(f"Automatically Generated Sentence Count: {self.state.sentence_count}")
+        
         except Exception as e:
             logging.error(f"Error in generate_sentence_count: {e}")
             raise
+
 
     def generate_poem(self):
         """Gera o poema utilizando o PoemCrew"""

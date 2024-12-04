@@ -159,3 +159,50 @@ LiteLLM completion() model= gpt-4o-mini; provider = openai
 By implementing these suggestions, the poem will not only be clearer and more engaging but will also resonate more deeply with its audience. Aim for a balance that conveys emotion while maintaining a rhythmic beauty throughout.
 2024-12-04 00:25:50,211 - INFO - Starting: Save Poem
 2024-12-04 00:25:50,212 - INFO - Poem and Details Saved for Theme 'Sustentabilidade'
+2024-12-04 00:29:36,393 - INFO - Starting the Flow
+2024-12-04 00:29:36,394 - INFO - Starting: Set Themes
+2024-12-04 00:29:48,851 - INFO - Themes Set: ['IA na saúde']
+2024-12-04 00:29:48,852 - INFO - Starting: Process Theme
+2024-12-04 00:29:48,852 - INFO - Processing Theme: IA na saúde
+2024-12-04 00:29:48,852 - INFO - Starting: Generate Sentence Count
+2024-12-04 00:30:14,792 - INFO - User-defined Sentence Count: 3
+2024-12-04 00:30:14,792 - INFO - Starting: Generate Poem
+2024-12-04 00:30:14,814 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:30:15,849 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:30:15,857 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:30:15,871 - INFO - Poem Generated for Theme 'IA na saúde': In the realm of AI, CrewAI shines bright,  
+With wit and wisdom, it takes flight,  
+Turning tasks to triumphs, a true delight!
+2024-12-04 00:30:15,871 - INFO - Starting: Review Poem
+2024-12-04 00:30:15,875 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:30:15,886 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:30:23,898 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:30:23,899 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:30:23,931 - INFO - Poem Review Completed for Theme 'IA na saúde': To provide meaningful feedback, I'll need to review the original poem. However, since the poem isn't included in the prompt, I'll give you an outline of how you can improve a poem’s tone, rhythm, and clarity.
+
+### Suggestions for Improvement:
+
+1. **Tone**:  
+   - Consider the emotions you want to evoke in your readers. Adjusting word choice can significantly shift the tone. If the poem feels neutral, you might use more vivid or emotive language.
+   - Check for any inconsistencies in tone; ensure that the feelings you express are coherent throughout the poem.
+
+2. **Rhythm**:  
+   - Read the poem aloud to hear its rhythm. Look for any awkward phrasing or syllable clashes that disrupt the natural flow.
+   - Consider varying line lengths or using enjambment to create a more dynamic rhythm.
+
+3. **Clarity**:  
+   - Make sure that your imagery and metaphors are clear. If certain lines feel convoluted, simplify your language or restructure your sentences for better flow.
+   - Avoid ambiguity unless it serves a purpose in your poem. Ensure that each line adds to the overall meaning rather than detracting from it.
+
+4. **Engagement**:  
+   - Start with a strong opening line that captivates the reader's interest. This could be a striking image or an intriguing question.
+   - End with a poignant closing that leaves a lasting impression, perhaps by returning to a thematic element introduced at the beginning.
+
+### Example Revision:
+If you provide me with a specific poem, I can demonstrate these suggestions with targeted revisions. 
+
+Overall, focusing on these aspects will help elevate your poem, making it more impactful and engaging for your audience. Please share your poem for a detailed review!
+2024-12-04 00:30:23,931 - INFO - Starting: Save Poem
+2024-12-04 00:30:23,931 - INFO - Poem and Details Saved for Theme 'IA na saúde'
