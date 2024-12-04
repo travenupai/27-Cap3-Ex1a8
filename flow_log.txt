@@ -1,7 +1,21 @@
-Sentence Count: 2
-Theme: IA na saúde
-Analysis: 
-Review Suggestions: To provide you with constructive feedback on the poem, I will focus on enhancing its tone, rhythm, and clarity. Here are my suggestions:
+2024-12-04 00:18:40,978 - INFO - Starting the Flow
+2024-12-04 00:18:40,979 - INFO - Starting: Generate Sentence Count
+2024-12-04 00:18:40,979 - INFO - Generated Sentence Count: 2
+2024-12-04 00:18:40,980 - INFO - Starting: Set Theme
+2024-12-04 00:18:49,763 - INFO - Theme Set: IA na saúde
+2024-12-04 00:18:49,763 - INFO - Starting: Generate Poem
+2024-12-04 00:18:49,787 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:18:50,909 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:18:50,916 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:18:50,931 - INFO - Poem Generated: In the land of code where brilliance flows, CrewAI crafts wonders, as everyone knows. With giggles and sparks, it lights up the night, weaving laughter and genius, a truly grand sight!
+2024-12-04 00:18:50,932 - INFO - Starting: Review Poem
+2024-12-04 00:18:50,936 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:18:50,949 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:18:55,916 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:18:55,917 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:18:55,957 - INFO - Poem Review Completed: To provide you with constructive feedback on the poem, I will focus on enhancing its tone, rhythm, and clarity. Here are my suggestions:
 
 1. **Tone**: Assess the emotional impact you want the reader to feel. If the current tone feels inconsistent, consider using more vivid language or metaphors to evoke stronger feelings. For example, instead of saying “the sun sets,” you could say “the sun sinks like a golden coin into the ocean’s depths,” which adds richness and warmth to the imagery.
 
@@ -16,3 +30,9 @@ Review Suggestions: To provide you with constructive feedback on the poem, I wil
 6. **Final Touches**: Look out for any clichés or overused phrases. Striving for originality can help the poem resonate more deeply with readers. Replace clichés with fresh imagery or innovative phrasing to revitalize the text.
 
 Taking these points into consideration will help to enhance your poem's impact and engagement with its audience. Make sure to revise and refine, allowing your unique voice to shine through.
+2024-12-04 00:18:55,957 - INFO - Starting: Save Poem
+2024-12-04 00:18:55,958 - INFO - Poem and Details Saved Successfully
+2024-12-04 00:23:06,033 - INFO - Starting the Flow
+2024-12-04 00:23:06,034 - INFO - Starting: Set Themes
+2024-12-04 00:23:20,288 - ERROR - Error in set_themes: 
+2024-12-04 00:23:20,289 - ERROR - Flow Execution Failed: 
