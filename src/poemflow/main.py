@@ -47,11 +47,17 @@ class PoemFlow(Flow[ExtendedPoemState]):
 
     @listen(generate_poem)
     def save_poem(self):
-        """Salva o poema gerado em um arquivo"""
+        """Salva o poema em poem.txt e os detalhes em poem_details.txt"""
         print("Saving poem")
-        with open("poem.txt", "w") as f:
-            f.write(self.state.poem)
 
+        # Salvar o poema no arquivo poem.txt
+        with open("poem.txt", "w") as poem_file:
+            poem_file.write(self.state.poem)
+
+        # Salvar os detalhes (número de frases e tema) no arquivo poem_details.txt
+        with open("poem_details.txt", "w") as details_file:
+            details_file.write(f"Sentence Count: {self.state.sentence_count}\n")
+            details_file.write(f"Theme: {self.state.theme}\n")
 
 def kickoff():
     """Inicia o fluxo de geração do poema"""
