@@ -36,3 +36,126 @@ Taking these points into consideration will help to enhance your poem's impact a
 2024-12-04 00:23:06,034 - INFO - Starting: Set Themes
 2024-12-04 00:23:20,288 - ERROR - Error in set_themes: 
 2024-12-04 00:23:20,289 - ERROR - Flow Execution Failed: 
+2024-12-04 00:24:26,402 - INFO - Starting the Flow
+2024-12-04 00:24:26,403 - INFO - Starting: Set Themes
+2024-12-04 00:25:29,780 - INFO - Themes Set: ['IA na saúde', 'Robótica', 'Sustentabilidade']
+2024-12-04 00:25:29,781 - INFO - Starting: Process Theme
+2024-12-04 00:25:29,781 - INFO - Processing Theme: IA na saúde
+2024-12-04 00:25:29,781 - INFO - Starting: Generate Sentence Count
+2024-12-04 00:25:29,781 - INFO - Generated Sentence Count: 4
+2024-12-04 00:25:29,781 - INFO - Starting: Generate Poem
+2024-12-04 00:25:29,802 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:25:31,657 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:25:31,664 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:25:31,679 - INFO - Poem Generated for Theme 'IA na saúde': CrewAI’s the wizard of witty delight,  
+Spinning gold from ideas, oh what a sight!  
+With a flick of the code and a sprinkle of cheer,  
+Making life brighter—it's perfectly clear!
+2024-12-04 00:25:31,679 - INFO - Starting: Review Poem
+2024-12-04 00:25:31,683 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:25:31,693 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:25:37,352 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:25:37,353 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:25:37,385 - INFO - Poem Review Completed for Theme 'IA na saúde': **Suggestions for Improvements:**
+
+1. **Tone Enhancement:** The tone of the poem could be made more evocative by using more vivid imagery and emotional language. This will help connect the reader to the poem on a deeper level. For instance, if a stanza describes nature, incorporating sensory details like colors, sounds, and feelings can make the scene come alive.
+
+2. **Rhythm Improvements:** To improve the rhythm, consider employing consistent meter throughout the poem. If you notice any irregularities in the syllable count, try to craft lines that flow smoothly and maintain a tempo that engages the reader. Utilizing techniques such as enjambment can create a more dynamic reading experience. 
+
+3. **Clarity:** Check for instances where the language may be too abstract or convoluted. Simplifying phrases can enhance clarity. Instead of using complex words or phrases, aim for straightforward language that captures the essence of the emotions or imagery being conveyed.
+
+**Revised Example:**
+
+*Original Line:*
+"The stars danced above, a celestial ball."
+
+*Revised Line:*
+"The stars twinkled brightly like a cosmic dance."
+
+This revision uses a more relatable simile and preserves the concept of the stars while enhancing imagery.
+
+4. **Punctuation and Line Breaks:** Ensure that punctuation enhances the flow rather than confuses it. Consider where line breaks can occur for emphasis and to allow a moment for reflection. This can add to the overall impact of the poem.
+
+5. **Title Optimization:** If the poem doesn’t have a title, consider giving it one that encapsulates its essence or theme. A strong title draws readers in and sets the tone for what’s to come.
+
+By implementing these improvements focusing on the tone, rhythm, and clarity, the poem can become more impactful and engaging for readers, inviting them to immerse themselves fully in the experience it conveys. 
+
+Please consider these suggestions when revising your poem.
+2024-12-04 00:25:37,385 - INFO - Starting: Save Poem
+2024-12-04 00:25:37,385 - INFO - Poem and Details Saved for Theme 'IA na saúde'
+2024-12-04 00:25:37,386 - INFO - Processing Theme: Robótica
+2024-12-04 00:25:37,386 - INFO - Starting: Generate Sentence Count
+2024-12-04 00:25:37,386 - INFO - Generated Sentence Count: 1
+2024-12-04 00:25:37,386 - INFO - Starting: Generate Poem
+2024-12-04 00:25:37,389 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:25:37,401 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:25:38,416 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:25:38,417 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:25:38,429 - INFO - Poem Generated for Theme 'Robótica': In the realm of code and dreams, CrewAI dances like a beam, with wit so sharp and charm so bright, it turns our tasks from drudgery to delight!
+2024-12-04 00:25:38,429 - INFO - Starting: Review Poem
+2024-12-04 00:25:38,432 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:25:38,441 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:25:44,046 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:25:44,047 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:25:44,082 - INFO - Poem Review Completed for Theme 'Robótica': To improve your poem effectively, here are some suggestions focusing on tone, rhythm, and clarity:
+
+1. **Tone Enhancement**: Depending on the current tone of your poem, you may want to amplify its emotional impact. Consider using more vivid imagery and sensory details to evoke stronger feelings in the reader. For example, instead of saying "the sky was blue," you might say "the sky stretched like a sapphire blanket.”
+
+2. **Rhythm Improvement**: Pay attention to the meter and flow of each line. Vary the line lengths to create a more dynamic rhythm. Reading the poem aloud can help identify awkward spots where the rhythm feels off. Aim for a consistent syllable count within stanzas or adopt a specific meter to give your poem a musical quality.
+
+3. **Clarity Refinement**: Ensure that your message is clear and straightforward. Avoid overly complex phrases that may confuse readers. Shorten long sentences or break them into smaller, more digestible parts. It can also be helpful to eliminate any unnecessary words that don't contribute to your poem’s meaning.
+
+4. **Imagery and Metaphors**: Consider enhancing your use of metaphors and similes for deeper engagement. They can help create a more compelling visual scene. Experiment with fresh comparisons that align more closely with the emotions or themes you wish to convey.
+
+5. **End Line Impact**: The closing lines of your poem should resonate deeply with the reader. Ensure they capture the essence of your message and leave a lasting impression. You might try a reflective question or a poignant statement that ties back to the main theme.
+
+Here’s a possible reworking of a sample stanza to illustrate these suggestions:
+
+Original:  
+"The trees were tall and green,  
+Their leaves whispering in the breeze."
+
+Revised:  
+"Towering giants draped in emerald hue,  
+Whisper secrets to the gentle sigh of the breeze."
+
+Applying these revisions across your poem should enhance its overall effectiveness, making it more engaging and memorable for your audience.
+2024-12-04 00:25:44,082 - INFO - Starting: Save Poem
+2024-12-04 00:25:44,083 - INFO - Poem and Details Saved for Theme 'Robótica'
+2024-12-04 00:25:44,083 - INFO - Processing Theme: Sustentabilidade
+2024-12-04 00:25:44,083 - INFO - Starting: Generate Sentence Count
+2024-12-04 00:25:44,083 - INFO - Generated Sentence Count: 3
+2024-12-04 00:25:44,083 - INFO - Starting: Generate Poem
+2024-12-04 00:25:44,088 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:25:44,097 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:25:45,732 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:25:45,733 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:25:45,745 - INFO - Poem Generated for Theme 'Sustentabilidade': CrewAI's got the brains, it's oh so bright,  
+Turning words into wonders, it takes flight,  
+With a wink and a giggle, it sets our dreams alight!
+2024-12-04 00:25:45,745 - INFO - Starting: Review Poem
+2024-12-04 00:25:45,749 - WARNING - Overriding of current TracerProvider is not allowed
+2024-12-04 00:25:45,757 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2024-12-04 00:25:50,185 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-12-04 00:25:50,185 - INFO - Wrapper: Completed Call, calling success_handler
+2024-12-04 00:25:50,211 - INFO - Poem Review Completed for Theme 'Sustentabilidade': To improve the poem, I suggest the following revisions focusing on tone, rhythm, and clarity:
+
+1. **Tone**: Consider adjusting the emotional register to create a more compelling atmosphere. For example, if the poem has a somber tone, think about enhancing the imagery to evoke a sense of longing or nostalgia.
+
+2. **Rhythm**: Pay attention to the meter. Introducing a consistent rhythm can enhance the poem's flow. Try reading it aloud and identifying any awkward phrases that disrupt the natural cadence. For instance, if a line seems too long or too short compared to others, adjust the syllable count for a better balance.
+
+3. **Clarity**: Ensure that every line clearly conveys its intended meaning. Avoid overly complex language that may obscure the message. Instead, choose precise words that resonate with the reader. As an exercise, simplify one line that feels convoluted, and replace it with a more straightforward expression.
+
+4. **Imagery**: To enrich the poem, incorporate vivid imagery that appeals to the senses. Use metaphors or similes that resonate deeply with the emotions conveyed. This can help draw readers into the experience you wish to share.
+
+5. **Punctuation**: Pay attention to punctuation as it plays a vital role in pacing and clarity. Consider using enjambment to create a sense of movement and urgency, or periods and commas to give moments of reflection and pause.
+
+By implementing these suggestions, the poem will not only be clearer and more engaging but will also resonate more deeply with its audience. Aim for a balance that conveys emotion while maintaining a rhythmic beauty throughout.
+2024-12-04 00:25:50,211 - INFO - Starting: Save Poem
+2024-12-04 00:25:50,212 - INFO - Poem and Details Saved for Theme 'Sustentabilidade'
